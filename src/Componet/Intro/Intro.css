@@ -1,0 +1,135 @@
+.intro{
+    display: flex;
+    height: 77vh;
+    margin-top: 6rem;
+}
+
+.i-left{
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.i-name{
+    display: flex;
+    flex-direction: column;
+}
+
+.i-name>:nth-child(1){
+    color: var(--black);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.i-name>:nth-child(2){
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.i-name>:nth-child(3){
+    color: var(--gray);
+    font-weight: 100;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.i-button{
+    padding: 1px 0px !important;
+    width: 7rem;
+    height: 2rem;
+}
+
+.i-right{
+    flex: 1;
+    position: relative;
+}
+
+.i-right>*{
+    position: absolute;
+    z-index: 1;
+}
+
+.i-right>:nth-child(1){
+    transform: scale(0.5);
+    top: -51%;
+    left: -33%;
+    border-radius: 100%;
+    transition: all 2s;
+}
+
+.i-right>:nth-child(2){
+    transform: scale(2.4);
+    top: -1%;
+    left: -11%;
+    border-radius: 50%;
+    padding: 0;
+    width: 90px;
+}
+
+.i-right>:nth-child(1):hover{
+    transform: scale(0.6);
+
+}
+
+.i-blur{
+    position: absolute;
+    width: 22rem;height: 14rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    filter: blur(72px);
+    z-index: -9;
+    top: -12%;
+    left: 56%;
+}
+
+.i-icons{
+    margin-top: 5rem;
+    margin-left: 3rem;
+    display: flex;
+    gap: 2rem;
+    transform: scale(1.1);
+}
+
+.i-icons:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+    .intro{
+        flex-direction: column;
+        height: 58rem;
+        gap: 7rem;
+        margin-top: 0rem;
+    }
+
+    .i-right{
+        transform: scale(0.5);
+        left: -8rem;
+        top: -9rem;
+    }
+
+    .i-blur{
+        display: none;
+    }
+
+    .Floating-Div:nth-of-type(1){
+        top: 3rem !important;
+        left: 34rem !important;
+        transform: scale(1.5);
+    }
+   
+    .Floating-Div:nth-of-type(2){
+        width: 60%;
+        top: 35rem !important;
+        left: 9rem !important;
+        transform: scale(1.5);
+    }
+    .i-right>:nth-child(2){
+        top: 8rem !important;
+        left: 6rem !important;
+        transform: scale(3.5);
+    }
+}
