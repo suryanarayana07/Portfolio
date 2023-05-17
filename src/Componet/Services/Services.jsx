@@ -63,8 +63,6 @@ const Services = () => {
         </motion.div>
 
       </div>
-      {/* <div className="s-blur" style={{ background: "rgb(238 210 255)" }}></div> */}
-      <div className="s-blur" style={{ background: '#C1F5FF', top: '69rem', width: '31rem', height: '21rem', left: '-8rem' }}></div>
     </div>
   );
 };

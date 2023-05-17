@@ -42,6 +42,9 @@ textarea {
   .contact-form {
     display: flex;
     flex-direction: column;
-    padding-bottom: 2rem;
+    margin: 0rem;
+    padding: 1rem;
+    width: auto;
+    height: 70vh;
   }
 }

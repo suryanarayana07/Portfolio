@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.container .box {
+  position: relative;
+  width: 240px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 100%;
+  background: linear-gradient(#fff, #fff, #e3e3e3);
+  filter: blur(1px);
+  z-index: 1;
+}
+
+.container .box::after {
+  content: "";
+  position: absolute;
+  top: 1;
+  right: -1px;
+  width: 20px;
+  height: 100%;
+  background: #9d9d9d;
+  filter: blur(1px);
+  z-index: 1;
+}
+
+.container .box .shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: #eee;
+}
+
+.container .box .content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#dbdae1, #a3aaba);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1), 15px 15px 15px rgba(0, 0, 0, 0.1),
+    20px 20px 20px rgba(0, 0, 0, 0.1), 50px 50px 50px rgba(0, 0, 0, 0.1),
+    inset 3px 3px 2px #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container .box .content .percent {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.container .box .content span{
+  position: absolute;
+  top: 5.5rem;
+  color: #fff;
+  font-size: 1.0rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  z-index: 9;
+}
+
+.container .box .content .percent::before {
+  content: '';
+  position: absolute;
+  inset: 20px;
+  background: #555;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.container .box .content .percent svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  transform: rotate(270deg);
+}
+
+.container .box .content .percent svg circle {
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+  stroke-width: 3;
+  stroke: rgba(0, 0, 0, 0.05);
+  transform: translate(5px, 5px);
+}
+
+.container .box .content .percent svg circle:nth-child(2){
+    stroke: var(--orange);
+    stroke-dasharray: 440px;
+    stroke-dashoffset: calc(440 - (440 * 80)/100);
+    opacity: 0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 2.5s;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.container .box .content .percent .dot{
+    position: absolute;
+    inset: 5px;
+    z-index: 10;
+    animation: dot 2s linear forwards;
+}
+
+@keyframes dot {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(calc(3.6deg * 80));
+    }
+}
+
+.container .box .content .percent .dot::before{
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14px;
+    height: 14px;
+    background: var(--orange);
+    border-radius: 50%;
+}
+
+.container .box .content .number{
+    position: relative;
+    inset: 0;
+    opacity: 0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 2.5s;
+}
+
+.container .box .content .number h2{
+    font-size: 2.3rem;
+    color: #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .box .content .number span {
+    font-weight: 300;
+    font-size: 1.3rem;
+    margin-top: -4.7rem;
+    margin-left: 4.3rem;
+    
+}
+

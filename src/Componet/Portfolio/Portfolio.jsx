@@ -1,10 +1,7 @@
 import React from 'react'
 import './Portfolio.css'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import Project1 from "../../img/Project1.jpg"
-import Project2 from "../../img/Project2.jpg"
-import Project3 from "../../img/Project3.jpg"
-import Project4 from "../../img/Project4.jpg"
+import comingsoon from '../../img/coomingSoon.avif'
 import 'swiper/css'
 import { themeContext } from '../../Context'
 import { useContext } from 'react'
@@ -18,25 +15,25 @@ const Portfolio = () => {
             <span>Portfolio</span>
 
             <Swiper
-            spaceBetween={30}
+            spaceBetween={90}
             slidesPerView={3}
             grabCursor={true}
             className='portfolio-slider'
             >
                 <SwiperSlide>
-                    <img src={Project1} alt="" />
+                    <img src={comingsoon} alt="" />
                 </SwiperSlide>
                 
                 <SwiperSlide>
-                    <img src={Project2} alt="" />
+                    <img src={comingsoon} alt="" />
                 </SwiperSlide>
                 
                 <SwiperSlide>
-                    <img src={Project3} alt="" />
+                    <img src={comingsoon} alt="" />
                 </SwiperSlide>
                 
                 <SwiperSlide>
-                    <img src={Project4} alt="" />
+                    <img src={comingsoon} alt="" />
                 </SwiperSlide>
             </Swiper>
         </div>

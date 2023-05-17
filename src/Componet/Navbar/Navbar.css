@@ -51,6 +51,7 @@
   .n-left{
     display: flex;
     flex-direction: row-reverse;
-    gap: 14rem;
+    gap: 15rem;
+    margin-left: 0.9rem;
   }
 }

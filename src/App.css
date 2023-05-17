@@ -12,6 +12,7 @@
 }
 
 .App{
+  padding: 0rem 3rem 0rem 3rem;
   overflow: hidden;
   color: var(--black
   );
@@ -34,3 +35,8 @@
   border: 1px solid var(--orange);
 }
 
+@media screen and (max-width: 480px){
+  .App{
+    padding: 0.1rem 0 0rem 0rem;
+  }
+}

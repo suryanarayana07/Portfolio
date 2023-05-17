@@ -42,12 +42,14 @@
     border: 7px solid var(--blueCard);
     box-shadow: var(--boxShadow);
     border-radius: 20px;
+    overflow: hidden;
 }
 
 .testimonial > img{
-    width: 6rem;
-    height: 6rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 100%;
+    margin-top: -2rem;
 }
 
 .testimonial > span{
@@ -72,5 +74,20 @@
 @media screen and (max-width: 480px){
     .testimonial{
         overflow: hidden;
+        padding: 0rem;
+        margin: 0rem;
+        width: 90%;
     }
+    .testimonial > img{
+        margin-top: 0rem;
+    }
+    .testimonial > span{
+        padding: 0rem 0rem 9rem .5rem;
+    }
+    .t-wrapper{
+        padding: 1rem;
+        margin: 0rem;
+        height: 70vh;
+    }
+
 }

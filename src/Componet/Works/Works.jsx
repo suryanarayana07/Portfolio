@@ -25,7 +25,7 @@ const Works = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quia?
         </span>
         <button className="button s-button">Download CV</button>
-        <div className="w-blur" style={{ background: "#ABF1FF94" }}></div>
+        {/* <div className="w-blur" style={{ background: "#ABF1FF94" }}></div> */}
       </div>
       <motion.div
         initial={{ rotate: 45 }}

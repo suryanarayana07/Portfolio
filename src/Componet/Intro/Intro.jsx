@@ -10,6 +10,7 @@ import FloatingDiv from '../FloatingDiv/FloatingDiv'
 import Insta from '@iconscout/react-unicons/icons/uil-instagram'
 import Linkedin from '@iconscout/react-unicons/icons/uil-linkedin'
 import Github from '@iconscout/react-unicons/icons/uil-github'
+import { Link } from 'react-scroll'
 
 const Intro = () => {
     const theme = useContext(themeContext);
@@ -23,9 +24,11 @@ const Intro = () => {
                     <span>Suryanarayana Mallik</span>
                     <span>Frontend Developer with high level of experience in web designing, producting the Quality work</span>
                 </div>
+                <Link spy={true} to='Contacts' smooth={true} activeClass='activeClass'>
                 <button className=" button i-button">
                     Hire me
                 </button>
+              </Link>
                 <div className="i-icons">
                     <a href="https://github.com/suryanarayana07">
                         <Github color='var(--orange)' size='3rem' />

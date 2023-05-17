@@ -44,18 +44,6 @@
     position: absolute;
 }
 
-.s-blur{
-    position: absolute;
-    width: 22rem;
-    height: 14rem;
-    border-radius: 50%;
-    background: #edd0ff;
-    filter: blur(52px);
-    z-index: -9;
-    top: 67rem;
-    left: 68%;
-}
-
 @media screen and (max-width: 480px) {
     .services{
         margin-top: 0;
@@ -63,6 +51,7 @@
         gap: 5rem;
         height: 51rem;
         padding: 0;
+        padding: 1rem;
     }
     .cards{
         display: flex;
@@ -71,9 +60,5 @@
     }
     .cards>*{
         position: static;
-    }
-
-    .s-blur{
-        display: block;
     }
 }

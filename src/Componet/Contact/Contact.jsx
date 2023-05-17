@@ -8,7 +8,7 @@ const Contact = () => {
    
 
   return (
-    <div className="contact-form">
+    <div className="contact-form" id='Contacts'>
         <div className="w-left">
             <div className="awesome">
                 <span style={{color : darkMode? 'white' : ''}}>Get in touch</span>
@@ -22,7 +22,7 @@ const Contact = () => {
                 <input type="text" name="user-name" className="user" placeholder="Name" />
                 <input type="email" name="user-email" className="user" placeholder="Email" />
                 <textarea name="message" className="user" placeholder="Message" />
-                <input type="submit" value="Send" className="button" />
+                <input type="reset" value="Send" className="button" />
                 <div className="blur c-blur1" style={{background: "var(--purple)"}}></div>
             </form>
         </div>

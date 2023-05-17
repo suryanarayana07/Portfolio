@@ -11,17 +11,17 @@ const Testimonials = () => {
         {
             img: vector1,
             review:
-                "Surya Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa alias explicabo, repellat adipisci placeat velit. Officia, excepturi. At quos necessitatibus veritatis deserunt dolor. Explicabo aspernatur eaque ducimus praesentium sunt velit placeat magni."
+                "Surya Officia, excepturi. At quos necessitatibus veritatis deserunt dolor. Explicabo aspernatur eaque ducimus praesentium sunt velit placeat magni."
         },
         {
             img: vector1,
             review:
-                " Consectetur adipisicing elit. Culpa alias explicabo, repellat adipisci placeat velit. Officia, excepturi. At quos necessitatibus veritatis deserunt dolor. Explicabo aspernatur eaque ducimus praesentium sunt velit placeat magni."
+                " Consectetur veritatis deserunt dolor. Explicabo aspernatur eaque ducimus praesentium sunt velit placeat magni."
         },
         {
             img: vector1,
             review:
-                "Repellat adipisci placeat velit. Officia, excepturi. At quos necessitatibus veritatis deserunt dolor. Explicabo aspernatur eaque ducimus praesentium sunt velit placeat magni."
+                "Repellat  ducimus praesentium sunt velit placeat magni."
         }
     ];
     return (
@@ -32,7 +32,7 @@ const Testimonials = () => {
                 <span>from me...</span>
                 <div
                     className="blur t-blur1"
-                    style={{ background: "var()--purple" }}
+                    style={{ background: "var(--purple)" }}
                 ></div>
                 <div className="blur t-blur2" style={{ background: "skyblue" }}></div>
             </div>
