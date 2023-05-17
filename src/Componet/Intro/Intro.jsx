@@ -25,10 +25,10 @@ const Intro = () => {
                     <span>Frontend Developer with high level of experience in web designing, producting the Quality work</span>
                 </div>
                 <Link spy={true} to='Contacts' smooth={true} activeClass='activeClass'>
-                <button className=" button i-button">
-                    Hire me
-                </button>
-              </Link>
+                    <button className=" button i-button">
+                        Hire me
+                    </button>
+                </Link>
                 <div className="i-icons">
                     <a href="https://github.com/suryanarayana07">
                         <Github color='var(--orange)' size='3rem' />

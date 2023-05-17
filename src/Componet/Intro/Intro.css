@@ -97,6 +97,13 @@
     cursor: pointer;
 }
 
+.i-animation>img{
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100%;
+}
+
 @media screen and (max-width: 480px) {
     .intro{
         flex-direction: column;

@@ -21,7 +21,7 @@ const Services = () => {
           <br /> necessitatibus est ab ratione officia sed dicta
           iure facilis
         </span>
-        <a href={Resume} download><button className="button s-button">Download CV</button></a>
+        <a href={Resume}><button className="button s-button">Download CV</button></a>
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>
       <div className="cards">

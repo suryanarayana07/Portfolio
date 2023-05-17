@@ -24,6 +24,7 @@
 .f-icons{
     display: flex;
     gap: 2rem;
+    margin-bottom: 3rem;
 }
 
 @media screen and (max-width: 480px) {
