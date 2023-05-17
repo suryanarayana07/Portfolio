@@ -16,7 +16,7 @@ const Footer = () => {
               <a href="https://www.facebook.com/suryanarayanmallick.dipu/">
                 <Facebook color='white' size='3rem'/>
               </a>
-              <a href="https://github.com/suryanarayana07">
+              <a href="https://github.com/suryanarayana07/">
                 <Github color='white' size='3rem'/>
               </a>
             </div>
