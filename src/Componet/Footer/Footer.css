@@ -1,5 +1,5 @@
 .footer{
-    background-color: orange;
+    background-color: rgba(41, 41, 189, 0.738);
     display: flex;
     align-items: center;
     margin: -0.5rem -3.5rem;
@@ -31,12 +31,27 @@
     .footer{
         border-radius: 10px 60px 10px 60px;    
         margin: 0rem 0rem 0rem 0rem; 
-        height: 20vh;  
+        height: 20vh !important;
     }
     .f-content{
-        margin-top: -0.6rem;
+        margin-top: 2.6rem;
     }
     .f-icons{
-        margin-top: -3rem;
+        margin-top: -2.8rem;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .footer{
+        border-radius: 10px 60px 10px 60px;    
+        margin: 0rem 0rem 0rem 0rem; 
+        height: 20vh;
+    }
+    .f-content{
+        margin-top: 2.6rem;
+    }
+    .f-icons{
+        margin-top: -2.8rem;
     }
 }

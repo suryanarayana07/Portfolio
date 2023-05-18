@@ -126,7 +126,7 @@
   .works {
     display: flex;
     flex-direction: column;
-    height: 60vh;
+    height: 69vh;
     padding: 1rem;
   }
   .awesome {
@@ -138,5 +138,91 @@
 
   .w-backCircle{
     display: none;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .works {
+    display: flex;
+    flex-direction: column;
+    height: 67vh !important;
+    padding: 1rem;
+    gap: 2rem;
+  }
+  .w-backCircle{
+    display: none;
+  }
+  .w-mainCircle {
+    position: relative;
+    left: 7rem !important;
+    width: 25rem;
+    height: 25rem;
+  }
+  .w-mainCircle > :nth-child(1) {
+    top: -3rem;
+    left: 9rem;
+  }
+  
+  .w-mainCircle > :nth-child(2) {
+    left: -3rem;
+    top: 8rem;
+  }
+  
+  .w-mainCircle > :nth-child(3) {
+    left: 9rem;
+    top: 8rem;
+  }
+  
+  .w-mainCircle > :nth-child(4) {
+    left: 21rem;
+    top: 8rem;
+  }
+  
+  .w-mainCircle > :nth-child(5) {
+    left: 9rem;
+    top: 20rem;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .works {
+    display: flex;
+    flex-direction: column;
+    height: 49vh;
+    padding: 1rem;
+    gap: 3rem;
+  }
+  .w-backCircle{
+    display: none;
+  }
+  .w-mainCircle {
+    position: relative;
+    left: 17rem;
+    width: 25rem;
+    height: 25rem;
+  }
+  .w-mainCircle > :nth-child(1) {
+    top: -3rem;
+    left: 9rem;
+  }
+  
+  .w-mainCircle > :nth-child(2) {
+    left: -3rem;
+    top: 8rem;
+  }
+  
+  .w-mainCircle > :nth-child(3) {
+    left: 9rem;
+    top: 8rem;
+  }
+  
+  .w-mainCircle > :nth-child(4) {
+    left: 21rem;
+    top: 8rem;
+  }
+  
+  .w-mainCircle > :nth-child(5) {
+    left: 9rem;
+    top: 20rem;
   }
 }

@@ -55,3 +55,21 @@
     margin-left: 0.9rem;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .n-button{
+    display: none;
+  }
+  .n-list{
+    margin-right: -5rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .n-button{
+    display: none;
+  }
+  .n-right{
+    margin-right: -6rem;
+  }
+}

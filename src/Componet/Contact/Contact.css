@@ -30,7 +30,7 @@
 }
 
 textarea {
-  height: 4rem !important;
+  height: 5rem !important;
 }
 
 .c-blur {
@@ -43,8 +43,42 @@ textarea {
     display: flex;
     flex-direction: column;
     margin: 0rem;
-    padding: 1rem;
+    padding: 1rem !important;
     width: auto;
-    height: 70vh;
+    height: 70vh !important;
+    gap: 1rem;
+  }
+  .contact-form {
+    height: 56vh;
+  }
+  .c-right .user{
+    height: 3rem;
+  }
+  .c-right > form{
+    margin-top: -6rem;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .contact-form{
+    gap: 1.5rem;
+  }
+  .contact-form {
+    height: 51vh;
+  }
+  .c-right .user{
+    height: 3rem;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .contact-form{
+    gap: 6rem;
+  }
+  .contact-form {
+    height: 41vh;
+  }
+  .c-right .user{
+    height: 3rem;
   }
 }

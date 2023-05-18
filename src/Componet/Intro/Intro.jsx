@@ -11,6 +11,7 @@ import Insta from '@iconscout/react-unicons/icons/uil-instagram'
 import Linkedin from '@iconscout/react-unicons/icons/uil-linkedin'
 import Github from '@iconscout/react-unicons/icons/uil-github'
 import { Link } from 'react-scroll'
+import TextEffect from '../TextEffect/TextEffect'
 
 const Intro = () => {
     const theme = useContext(themeContext);
@@ -22,6 +23,10 @@ const Intro = () => {
                 <div className="i-name">
                     <span style={{ color: darkMode ? 'white' : '' }}>Hy! I Am</span>
                     <span>Suryanarayana Mallik</span>
+                    <div className="i-effect">
+                    <span>I'm a </span>
+                    <span><TextEffect /></span>
+                    </div>
                     <span>Frontend Developer with high level of experience in web designing, producting the Quality work</span>
                 </div>
                 <Link spy={true} to='Contacts' smooth={true} activeClass='activeClass'>
