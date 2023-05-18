@@ -27,7 +27,7 @@ const Intro = () => {
                     <span style={{ color: darkMode ? 'white' : '' }}>I'm a </span>
                     <span><TextEffect /></span>
                     </div>
-                    <span>Frontend Developer with high level of experience in web designing, producting the Quality work</span>
+                    <span style={{ color: darkMode ? 'white' : '' }}>Frontend Developer with high level of experience in web designing, producting the Quality work</span>
                 </div>
                 <Link spy={true} to='Contacts' smooth={true} activeClass='activeClass'>
                     <button className=" button i-button">
