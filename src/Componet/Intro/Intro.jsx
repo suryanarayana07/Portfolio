@@ -24,7 +24,7 @@ const Intro = () => {
                     <span style={{ color: darkMode ? 'white' : '' }}>Hy! I Am</span>
                     <span>Suryanarayana Mallik</span>
                     <div className="i-effect">
-                    <span>I'm a </span>
+                    <span style={{ color: darkMode ? 'white' : '' }}>I'm a </span>
                     <span><TextEffect /></span>
                     </div>
                     <span>Frontend Developer with high level of experience in web designing, producting the Quality work</span>
