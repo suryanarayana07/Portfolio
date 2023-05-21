@@ -3,7 +3,8 @@
     display: flex;
     height: 70vh;
     margin-bottom: 13rem;
-    margin-top: 9rem;
+    margin-top: 5rem;
+    padding-top: 5rem;
 }
 
 .awesome{

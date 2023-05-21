@@ -18,7 +18,7 @@ const Intro = () => {
     const darkMode = theme.state.darkMode;
 
     return (
-        <div className="intro">
+        <div className="intro" id='Intro'>
             <div className="i-left">
                 <div className="i-name">
                     <span style={{ color: darkMode ? 'white' : '' }}>Hy! I Am</span>
@@ -48,12 +48,12 @@ const Intro = () => {
             </div>
             <div className="i-right">
                 <img
-                    src={surya} alt="" srcset="" />
+                    src={surya} alt="" srcSet="" />
                 <motion.img
                     initial={{ left: '-21%' }}
                     whileInView={{ left: '4%' }}
                     transition={{ duration: 2.5, type: 'spring' }}
-                    src={emoji} alt="" srcset="" />
+                    src={emoji} alt="" srcSet="" />
 
                 <motion.div className="Floating-Div"
                     initial={{ left: '82%', top: '-4%' }}

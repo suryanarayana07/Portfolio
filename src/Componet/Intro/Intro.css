@@ -1,7 +1,7 @@
 .intro{
     display: flex;
     height: 77vh;
-    margin-top: 6rem;
+    padding-top: 7rem;
 }
 
 .i-left{
@@ -125,11 +125,11 @@
 
 @media screen and (max-width: 480px) {
     .intro{
+        display: flex;
         flex-direction: column;
         height: 58rem;
         gap: 7rem;
-        margin-top: 0rem;
-        padding: 1rem;
+        margin-top: 3rem !important;
     }
 
     .i-right{

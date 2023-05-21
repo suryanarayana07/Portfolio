@@ -4,7 +4,7 @@ import './FloatingDiv.css'
 const FloatingDiv = ({image,txt1,txt2}) => {
   return (
     <div className="FloatingDiv">
-        <img src={image} alt="" srcset="" />
+        <img src={image} alt="" srcSet="" />
         <span>
             {txt1}
             <br/>
