@@ -2,7 +2,7 @@ import React from "react";
 import "./Services.css";
 import Card from "../Card/Card";
 import don from "../../img/don.png"
-import Resume from "./resume.pdf"
+import Resume from "./Suryanarayana mallik.cv.pdf"
 import { themeContext } from "../../Context";
 import { useContext } from 'react';
 import { motion } from "framer-motion";
@@ -21,7 +21,7 @@ const Services = () => {
           <br /> necessitatibus est ab ratione officia sed dicta
           iure facilis
         </span>
-        <a href={Resume}><button className="button s-button">Download CV</button></a>
+        <a href={Resume} download><button className="button s-button">Download CV</button></a>
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>
       <div className="cards">
